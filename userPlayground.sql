@@ -1,0 +1,10 @@
+SELECT * FROM user;
+INSERT INTO user (firstName, lastName, username, email) VALUES ("Melissa", "Longenberger", "dojo24", "mlongenberger@codingdojo.com"), ("Mel", "Brooks", "mel", "mbrooks@codingdojo.com");
+SELECT * FROM user;
+INSERT INTO user (firstName, lastName, username, email) VALUES ("Jane", "Doe", "janieGirl", "jane@email.com");
+INSERT INTO user (firstName, lastName, email) VALUES ("John", "Smith", "jsmith@email.com");
+DELETE FROM user WHERE id = 11;
+INSERT INTO user (firstName, lastName, email) VALUES ("John", "Smith", "jsmith@email.com");
+SELECT * FROM user;
+UPDATE user SET username = "johnnyBoy" WHERE id = 12;
+SELECT * FROM user;

@@ -1,0 +1,22 @@
+Using the following website
+
+https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
+
+Queries we ran:
+SELECT * FROM Orders LEFT JOIN Customers on Orders.CustomerID = Customers.CustomerID LEFT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID LEFT JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID WHERE Orders.CustomerID = 92;
+    - This query joins the foreign key tables so that we can view all the information that pertains to the order the customer that we added created.
+SELECT * FROM Orders LEFT JOIN Customers on Orders.CustomerID = Customers.CustomerID LEFT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID LEFT JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID WHERE Shippers.ShipperID = 2;
+    - Using the same type of query we are now pulling multiple records by looking for all the orders that a specific Shipper has
+SELECT * FROM Customers WHERE Country = "USA";
+    - Selects all data from Customers table that have a country listed as USA
+UPDATE Customers SET City = "Dallas" WHERE CustomerID = 93;
+    - Changed the values of the city for 1 record
+
+
+Using Week3Session1 ERD DATA:
+SELECT * FROM user LEFT JOIN list ON user_id = user.id;
+    - Will pull all users and all from list but joining on the user id.
+
+
+UPDATE, INSERT, DELETE = Will only effect 1 row / record / object
+SELECT = can be used to pull 1 or many records

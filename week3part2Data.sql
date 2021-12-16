@@ -1,0 +1,4 @@
+INSERT INTO user (firstName, lastName, email) VALUES ("Dean","Winchester", "ikilledhitler@supernatural.com"), ("Sam", "Winchester", "sammy@supernatural.com");
+INSERT INTO animals (species) VALUES ("Lion"), ("Bear"), ("Tiger"), ("Dolphin"), ("Penquin"), ("Camel"), ("Giraff"), ("Deer"), ("Elephant");
+INSERT INTO zoo (zooName, zooLocation) VALUES ("Dojo Zoo", "Dojo USA"), ("Coding Zoo", "NYC");
+INSERT INTO employee (eFirstName, eLastname, user_id, zoo_id) VALUES ("John", "Smith", 1, 1), ("Melissa", "Longenberger", 2, 2), ("Jane", "Doe", 1, 1), ("Jethro", "Gibbs", 2,2),("Mary", "Winchester", 1,1), ("Castiell", "Novak",2,2 );
